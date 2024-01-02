@@ -1,0 +1,21 @@
+.background {
+  background-image: url("/src/assets/Images/اسلایدر\ با\ متن.png");
+}
+
+.backgroundphone {
+  background-image: url("/src/assets/Images/اسلایدر.png");
+}
+
+.font-bold-doran {
+  font-family: "Doran";
+  font-weight: 900;
+}
+
+.font-regular-doran {
+  font-family: "Doran";
+  font-weight: 700;
+}
+
+.yekan {
+  font-family: "Yekan"
+}
