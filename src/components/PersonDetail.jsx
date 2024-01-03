@@ -2,7 +2,7 @@ import { IoPlayOutline } from "react-icons/io5";
 
 function PersonDetail() {
   return (
-    <div className="md:mt-20 mt-10 flex-col flex md:flex-row justify-center mb-52 px-10 md:px-40 gap-x-20 items-start">
+    <div className="md:mt-20 mt-10 flex-col flex md:flex-row justify-center mb-10 px-10 md:px-40 gap-x-20 items-start">
       <div className="relative">
         <img
           src="/src/assets/images/معرفی دکتر.png"
