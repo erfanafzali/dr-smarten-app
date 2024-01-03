@@ -40,36 +40,46 @@ function Navbar() {
   return (
     <div className=" md:flex justify-center items-center hidden">
       <ul className="flex justify-center items-center md:text-sm lg:text-lg xl:text-xl  whitespace-nowrap gap-x-5 md:gap-x-4 lg:gap-x-6">
-        <li className="flex justify-center items-center w-full">
-          <span> صفحه ی اصلی</span>
-          <span>
-            <MdArrowBackIos className="w-3 h-3" />
-          </span>
-        </li>
-        <li className="flex justify-center items-center w-full">
-          <span>خدمات</span>
-          <span>
-            <MdArrowBackIos className="w-3 h-3" />
-          </span>
-        </li>
-        <li className="flex justify-center items-center w-full">
-          <span>تست روانشناسی</span>
-          <span>
-            <MdArrowBackIos className="w-3 h-3" />
-          </span>
-        </li>
-        <li className="flex justify-center items-center w-full">
-          <span>مقالات</span>
-          <span>
-            <MdArrowBackIos className="w-3 h-3" />
-          </span>
-        </li>
-        <li className="flex justify-center items-center w-full">
-          <span>ارتباط با ما</span>
-          <span>
-            <MdArrowBackIos className="w-3 h-3" />
-          </span>
-        </li>
+        <button>
+          <li className="flex justify-center items-center w-full">
+            <span> صفحه ی اصلی</span>
+            <span>
+              <MdArrowBackIos className="w-3 h-3" />
+            </span>
+          </li>
+        </button>
+        <button>
+          <li className="flex justify-center items-center w-full">
+            <span>خدمات</span>
+            <span>
+              <MdArrowBackIos className="w-3 h-3" />
+            </span>
+          </li>
+        </button>
+        <button>
+          <li className="flex justify-center items-center w-full">
+            <span>تست روانشناسی</span>
+            <span>
+              <MdArrowBackIos className="w-3 h-3" />
+            </span>
+          </li>
+        </button>
+        <button>
+          <li className="flex justify-center items-center w-full">
+            <span>مقالات</span>
+            <span>
+              <MdArrowBackIos className="w-3 h-3" />
+            </span>
+          </li>
+        </button>
+        <button>
+          <li className="flex justify-center items-center w-full">
+            <span>ارتباط با ما</span>
+            <span>
+              <MdArrowBackIos className="w-3 h-3" />
+            </span>
+          </li>
+        </button>
       </ul>
     </div>
   );
