@@ -4,7 +4,7 @@ export default function CountDown() {
   const { hours, minutes, seconds, isActive, startCountdown, resetCountdown } =
     useCountdown();
   return (
-    <div className="w-full flex flex-col justify-center items-center relative lg:right-[150px] lg:top-10">
+    <div className="w-full flex flex-col justify-center items-center relative lg:left-[100px] lg:top-10">
       <div className="flex justify-center items-center gap-x-3 ">
         <div  className="flex flex-col justify-center items-center px-5 py-4 rounded-md gap-y-2 yekan font-bold text-xl bg-gray-600 text-white">
           <span>{seconds}</span>

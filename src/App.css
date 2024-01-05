@@ -17,7 +17,62 @@
 }
 
 .yekan {
-  font-family: "Yekan"
+  font-family: "Yekan";
 }
 
- 
+li.active {
+  border-bottom: 2px solid green;
+  color: green;
+}
+
+/* استایل هاور */
+li:hover {
+  color: #55a630; /* یک رنگ هاور دلخواه */
+}
+
+li {
+  cursor: pointer;
+}
+
+/* YourMenuStyles.css */
+
+/* استایل مربوط به منو */
+.menu-container {
+  position: relative;
+}
+
+.menu-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px; /* عرض منو را تنظیم کنید */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* انیمیشن ورود منو */
+.menu-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* انیمیشن خروج منو */
+.menu-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+}

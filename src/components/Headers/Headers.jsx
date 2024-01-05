@@ -1,5 +1,6 @@
-import { MdArrowBackIos } from "react-icons/md";
 import { IoPersonOutline, IoMenu } from "react-icons/io5";
+import Navbar from "./Navbar";
+import HambergerMenu from "./HambergerMenu";
 
 function Headers() {
   return (
@@ -27,60 +28,7 @@ function Menu() {
 function Logo() {
   return (
     <div className="">
-      <img
-        src="/src/assets/icons/لوگو.png"
-        alt=""
-        className="w-[100px] md:w-[150px] lg:w-[200px]"
-      />
-    </div>
-  );
-}
-
-function Navbar() {
-  return (
-    <div className=" md:flex justify-center items-center hidden">
-      <ul className="flex justify-center items-center md:text-sm lg:text-lg xl:text-xl  whitespace-nowrap gap-x-5 md:gap-x-4 lg:gap-x-6">
-        <button>
-          <li className="flex justify-center items-center w-full">
-            <span> صفحه ی اصلی</span>
-            <span>
-              <MdArrowBackIos className="w-3 h-3" />
-            </span>
-          </li>
-        </button>
-        <button>
-          <li className="flex justify-center items-center w-full">
-            <span>خدمات</span>
-            <span>
-              <MdArrowBackIos className="w-3 h-3" />
-            </span>
-          </li>
-        </button>
-        <button>
-          <li className="flex justify-center items-center w-full">
-            <span>تست روانشناسی</span>
-            <span>
-              <MdArrowBackIos className="w-3 h-3" />
-            </span>
-          </li>
-        </button>
-        <button>
-          <li className="flex justify-center items-center w-full">
-            <span>مقالات</span>
-            <span>
-              <MdArrowBackIos className="w-3 h-3" />
-            </span>
-          </li>
-        </button>
-        <button>
-          <li className="flex justify-center items-center w-full">
-            <span>ارتباط با ما</span>
-            <span>
-              <MdArrowBackIos className="w-3 h-3" />
-            </span>
-          </li>
-        </button>
-      </ul>
+      <HambergerMenu />
     </div>
   );
 }

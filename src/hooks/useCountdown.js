@@ -12,7 +12,7 @@ const useCountdown = (initialMinutes = 0, initialSeconds = 0) => {
   const [hours, setHours] = useState(storedHours);
   const [minutes, setMinutes] = useState(storedMinutes);
   const [seconds, setSeconds] = useState(storedSeconds);
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
 
   useEffect(() => {
     localStorage.setItem("countdownHours", hours.toString());
@@ -35,6 +35,7 @@ const useCountdown = (initialMinutes = 0, initialSeconds = 0) => {
     }
 
     return () => clearInterval(interval);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive, hours, minutes, seconds]);
 
   const startCountdown = () => {
