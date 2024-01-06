@@ -1,12 +1,14 @@
 import "./App.css";
- 
+import { Route, Routes } from "react-router-dom";
+
 import BodyImage from "./components/BodyImage";
 import Headers from "./components/Headers/Headers";
 import Introduction from "./components/Introduction";
 import PersonDetail from "./components/PersonDetail";
 import Template from "./components/Template/Template";
- 
-import Favorite from './components/Favorite';
+import Favorite from "./components/Favorite";
+import Footer, { ListArticles } from "./components/Footer/Footer";
+import Article from "./components/Footer/Article";
 
 function App() {
   return (
@@ -16,7 +18,13 @@ function App() {
       <PersonDetail />
       <Template />
       <Introduction />
-      <Favorite/>
+      <Favorite />
+      <Routes>
+        <Route path="/" element={<Footer />}>
+          <Route path="/articles" exact element={<ListArticles />} />
+          <Route path="/article/:id" element={<Article />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
