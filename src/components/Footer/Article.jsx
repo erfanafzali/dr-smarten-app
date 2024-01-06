@@ -10,10 +10,10 @@ export default function Article({ item }) {
 
   if (!selectedArticle) {
     // اگر مقاله با این ID پیدا نشد
-    return <div>مقاله مورد نظر یافت نشد</div>;
+    return <div className="w-full text-2xl font-bold ">{isLoading}</div>;
   }
   return (
-    <div className="w-full h-auto lg:pr-24 ">
+    <div className="w-full h-auto lg:pr-24 " id="section1" >
       <div className="xl:h-96 xl:w-[500px] lg:h-80 lg:w-[400px]">
         <p className="pb-3 font-semibold text-gray-500 text-xl">آخرین مقالات</p>
         <div className="w-full h-full">

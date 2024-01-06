@@ -1,0 +1,24 @@
+.hover-button {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hidden-text {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    
+    height: 100%;
+    background-color: rgb(180, 229, 255); /* یا هر رنگ دیگری که دلتان بخواهد */
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px; /* اینجا برای افزودن فاصله از سمت راست */
+    border-radius: 50px;
+  }
+  
+  .visible {
+    right: 0;
+  }
+  

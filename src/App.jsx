@@ -9,6 +9,8 @@ import Template from "./components/Template/Template";
 import Favorite from "./components/Favorite";
 import Footer, { ListArticles } from "./components/Footer/Footer";
 import Article from "./components/Footer/Article";
+import ContactUs from "./components/ContactUs/ContactUs";
+ 
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
           <Route path="/article/:id" element={<Article />} />
         </Route>
       </Routes>
+      <ContactUs/>
     </div>
   );
 }

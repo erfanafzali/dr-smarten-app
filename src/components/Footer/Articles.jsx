@@ -11,7 +11,7 @@ function Articles({ item }) {
         <div className="w-full">
           <h1 className=" sm:text-base font-bold">{item.name}</h1>
           <div className="sm:text-sm text-xs">{item.date}</div>
-          <p className="xl:pl-32 lg:pl-8 sm:text-sm text-xs">{item.desc}</p>
+          <p className="xl:pl-32 lg:pl-8 sm:text-sm text-xs">{String(item.desc).slice(0,55)}...</p>
         </div>
       </div>
     </div>
