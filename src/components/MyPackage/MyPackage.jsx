@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components";
+ 
 
 // Import Swiper styles
 import "swiper/css";
@@ -10,6 +11,7 @@ import "swiper/css/pagination";
 import { EffectCube, Pagination } from "swiper/modules";
 import useFetch from "../../hooks/useFetch";
 import { IoPlayOutline } from "react-icons/io5";
+ 
 
 const StyledSwiper = styled(Swiper)`
   @media (min-width: 768px) {
@@ -55,6 +57,8 @@ const StyledSwiperSlide = styled(SwiperSlide)`
 
 function MyPackage() {
   const { isLoading, data } = useFetch("package");
+ 
+ 
   return (
     <div className=" md:bg-gray-400 rounded-full w-full ">
       <div className="w-full h-[600px] md:h-[650px]   mb-20 mt-10">
